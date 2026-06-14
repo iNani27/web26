@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Isa website</title>
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <h1>Salut à <span>toutze</span></h1>
+            <p>Ce site est construit en HTML et CSS.</p>
+            <q>La formation est la manière la plus puissante que vous pouvez utiliser pour changer le monde.</q>
+        </header>
+        <main>
+            <section>
+                <h2>À propos de moi</h2>
+                <p>J'aime bien coder des sites web "from scratch".</p>
+                <p>Et j'aime apprendre de nouvelles partiques sur <a target="_blank" href="https://www.w3schools.com">W3Schools</a> car il suit les recommandations du <a target="_blank" href="https://www.w3.org/">W3C</a>.</p>
+            </section>
+            <section>
+                <h2>Projets</h2>
+                <ul>
+                    <li>Accueil</li>
+                    <li>Showcase</li>
+                    <li>Responsive layout</li>
+                </ul>
+            </section>
+            <section>
+                <article>
+                    <h2>media</h2>
+                    <p>
+                        Make the hero image responsive so it scales with the layout.
+                        <br>
+
+                        &lt;img src="images/hero.jpg" style="<b>max</b>-width:100%;height:<b>auto</b>;"&gt;
+                    </p>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="img/hero-large.jpg">
+                        <img src="img/hero-small.jpg" alt="Micro hero images are missing ^^">
+                    </picture>
+                </article>
+            </section>
+
+            <section>
+                <h2>Balises HTML utilisées</h2>
+                <code>&lt;span&gt;&nbsp;&lt;/span&gt;</code>
+                <p>Pourquoi? pour isoler une partie du texte de l'entête <code>header</code> afin de lui donner un style de la famille de police de caractère <code>font-family</code> "Papyrus" dans la feuille de style.</p>
+            </section>
+            <section class="elastic">
+                <article> 
+                    <h2>À explorer :</h2>
+                    <ul>
+                        <li>citation avec <code>q</code></li>
+                        <li>aria .. primary  <code>&lt;nav class="site-nav" 
+                                aria-label="primary"&gt;</code></li>
+                        <li>skip-link ..
+                            <code>&lt;a class="skip-link" 
+                                href="#main-content"&gt;Skip to main content&lt;/a&gt;
+                            </code>
+                        </li>
+
+                        <li>
+                            form avec label for email & required aria-describedby  
+                        </li>
+                        <li>Which HTML element is best for a standalone piece of content? Article !</li> 
+
+                        <li>Create a "secondary" button variant using a modifier class.</li> 
+                        <li> CSS 
+                            button
+                            [data-variant="ghost"] {
+                            border: 1px solid currentColor;
+                            background: transparent;
+                            }
+                        </li>
+                        <li>
+                            <code>font-size: 
+                                clamp
+                                (1.875rem, 5vw, 
+                                2.75
+                                rem);
+                            </code>:  CSS function  enables fluid <b>text sizing</b> between a <b>minimum and maximum value</b>
+
+                        </li>
+                        <li>color-mix()</li>
+                        <li>
+                            call to action :  
+                            <br>
+                            :root {
+                            --accent: #6366f1;
+                            }
+
+                            .cta {
+
+                            background
+                            -color: var(--accent);
+                            color: white;
+                            }
+                        </li>
+                        <li>
+                            :root {
+                            --brand-base: #1e293b;
+                            --brand-accent: #38bdf8;
+                            --brand-gradient: 
+                            <b>color</b>-mix(in srgb, var(--brand-base) 70%, var(--brand-accent) 30%);
+                            }
+                        </li>
+                        <li>
+                            Which display type allows width/height but flows inline? inline-block
+                        </li>
+                        <li>
+                            display: flex | justify-content | 
+                        </li>
+                        <li>
+                            CSS cubic-bezier() Function
+                        </li>
+                    </ul>
+                </article>
+                <aside>
+                    <h4>
+                        Références externes  
+                    </h4>
+
+                    <p>  
+                        <a target="_blank" href="https://www.w3schools.com/CSSref/css_units.php">
+                            rem, em, % = CSS Units
+                        </a>
+                        <br> (font-size: 1.125rem; line-height: 1.6;)
+                    </p>
+                    <hr>
+                    <p>
+
+                        <a target="_blank" href="
+                           https://emojiguide.org/fr/%C3%A9tincelles">
+                            emoji en HTML entities
+                        </a>
+                    </p>
+                    <hr>
+                </aside>
+            </section>
+        </main>
+        <footer>
+            <p>Créé with ❤️ en HTML & CSS &#10024; .. et peut-être quelques bibliothèques JavaScript [js].. we will see.</p>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>flex gallery</title>
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                margin: 0;
+                font-family: Arial;
+            }
+
+            .header {
+                text-align: center;
+                padding: 32px;
+            }
+
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+
+            /* Create four equal columns that sits next to each other */
+            .column {
+                flex: 25%;
+                max-width: 25%;
+                padding: 0 4px;
+            }
+
+            .column img {
+                margin-top: 8px;
+                vertical-align: middle;
+            }
+
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 800px) {
+                .column {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+            }
+
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .column {
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <div class="header">
+            <h1>Responsive Image Gallery</h1>
+            <p>Resize the browser window to see the responsive effect.</p>
+            <p>Une, deux ou quatre colonnes</p>
+        </div>
+
+        <!-- Photo Grid -->
+        <div class="container"> 
+            <div class="column">
+                <img src="img/atlantios-rainforest-3119822_640.jpg" alt="" style="width:100%">
+                <img src="img/jplenio-forest-8684668.jpg" alt="" style="width:100%">
+                <img src="img/juncala-forest-7406241_640.jpg" alt="" style="width:100%">
+                <img src="img/mariuszopole-squirrel-7025721.jpg" alt="" style="width:100%">
+                <img src="img/pasja1000-green-4183977.jpg" alt="" style="width:100%">
+                <img src="img/ma_frank-forest-7311484_640.jpg" alt="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <img src="img/mila-del-monte-forest-8355748_640.jpg" alt="" style="width:100%">
+                <img src="img/eluxirphoto-squirrel-4515962.jpg" alt="" style="width:100%">
+                <img src="img/mrdidg-undergrowth-4394611_640.jpg" alt="" style="width:100%">
+                <img src="img/ply1974-bamboo-3644380_640.jpg" alt="" style="width:100%">
+                <img src="img/atlantios-rainforest-3119822_640.jpg" alt="" style="width:100%">
+                <img src="img/flo222-nature-3194001_640.jpg" alt="" style="width:100%">
+            </div> 
+
+
+
+            <div class="column">
+                <img src="img/ply1974-bamboo-3644380_640.jpg" alt="" style="width:100%">
+                <img src="img/ralphs_fotos-squirrel-5603496.jpg" alt="" style="width:100%">
+                <img src="img/jplenio-forest-8684668.jpg" alt="" style="width:100%">
+                <img src="img/juncala-forest-7406241_640.jpg" alt="" style="width:100%">
+                <img src="img/cothni3-ecureuil-6300320.jpg" alt="" style="width:100%">
+                <img src="img/11485062-tree-6062178_640.png" alt="" style="width:100%">
+            </div>
+
+            <div class="column">
+                <img src="img/loicp90-stream-5208557_640.jpg" alt="" style="width:100%">
+                <img src="img/alexas_fotos-frog-3509388.jpg" alt="" style="width:100%">
+                <img src="img/ma_frank-forest-7311484_640.jpg" alt="" style="width:100%">
+                <img src="img/mila-del-monte-forest-8355748_640.jpg" alt="" style="width:100%">
+                <img src="img/alexas_fotos-frog-3619935.jpg" alt="" style="width:100%">
+                <img src="img/mbll-butterfly-1938978-crop.png" alt="" style="width:100%">
+            </div>
+        </div>
+
+    </body>
+</html>
+
+
